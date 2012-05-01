@@ -42,7 +42,6 @@
         	this.height = this.element.height();
         	this.innerHeight = this.wrapper.height();
 			
-			console.log({height:this.height,innerHeight:this.innerHeight})
         	if(this.innerHeight > this.height){
         		
         		this.element.css({
@@ -53,7 +52,6 @@
         			position: 'absolute'
         		});
         		if(!this.hasOwnProperty('slider')){
-        			console.log('build')
 					that.slider = $('<div class="slider-vertical">').prependTo(this.element).slider({
 	                    orientation: this.options.orientation,
 	                    range: "min",
